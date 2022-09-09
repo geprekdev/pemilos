@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,7 +24,11 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended(RouteServiceProvider::HOME);
+            return redirect()->intended(
+                auth()->user()->role_id === User::ADMIN
+                    ? route('admin.dashboard')
+                    : RouteServiceProvider::HOME
+            );
         }
 
         return back()->withErrors([
