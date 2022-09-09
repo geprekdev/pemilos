@@ -2,7 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
 /**
@@ -17,24 +19,32 @@ class UserFactory extends Factory
      */
     public function definition()
     {
-        return [
+        $roles = Collection::make([User::ADMIN, User::STUDENT, User::TEACHER, User::STAFF]);
+
+        $classes = Collection::make([
+            'X PPLG 1',
+            'X PPLG 2',
+            'X PPLG 3',
+            'XI PPLG 1',
+            'XI PPLG 2',
+            'XI PPLG 3',
+            'XII RPL 1',
+            'XII RPL 2',
+            'XII RPL 3',
+        ]);
+
+        $user = [
             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'username' => fake()->userName(),
+            'role_id' => $roles->random(),
+            'password' => bcrypt('password'),
             'remember_token' => Str::random(10),
         ];
-    }
 
-    /**
-     * Indicate that the model's email address should be unverified.
-     *
-     * @return static
-     */
-    public function unverified()
-    {
-        return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
-        ]);
+        if ($user['role_id'] === User::STUDENT) {
+            $user['class'] = $classes->random();
+        }
+
+        return $user;
     }
 }
