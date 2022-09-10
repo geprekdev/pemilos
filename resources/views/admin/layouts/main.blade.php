@@ -226,6 +226,9 @@
                 clip-rule="evenodd"></path>
             </svg>
           </button>
+
+          @yield('search')
+
           <ul class="flex items-center flex-shrink-0 space-x-6" style="margin-left: auto">
             <li class="flex">
               <form action="{{ route('logout') }}" method="POST">
