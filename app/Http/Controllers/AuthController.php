@@ -25,7 +25,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             return redirect()->intended(
-                auth()->user()->role_id === User::ADMIN
+                in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN])
                     ? route('admin.dashboard')
                     : RouteServiceProvider::HOME
             );

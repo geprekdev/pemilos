@@ -12,10 +12,11 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    const ADMIN = 1;
-    const STUDENT = 2;
-    const TEACHER = 3;
-    const STAFF = 4;
+    const SUPER_ADMIN = 1;
+    const ADMIN = 2;
+    const STUDENT = 3;
+    const TEACHER = 4;
+    const STAFF = 5;
 
     /**
      * The attributes that are mass assignable.

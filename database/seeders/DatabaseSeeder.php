@@ -16,6 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        User::factory()->create([
+            'name' => 'Super Admin',
+            'username' => 'super_admin',
+            'role_id' => User::SUPER_ADMIN
+        ]);
+
         User::factory(10)->create();
     }
 }

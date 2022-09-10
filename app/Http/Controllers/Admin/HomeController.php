@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        abort_if(auth()->user()->role_id !== User::ADMIN, 404);
+        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
 
         return view('admin.dashboard');
     }
