@@ -10,6 +10,8 @@ class UserController extends Controller
 {
     public function index()
     {
+        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
+
         $users = User::paginate(36);
 
         return view('admin.users.index', compact('users'));
