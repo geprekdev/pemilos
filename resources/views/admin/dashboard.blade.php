@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('admin.layouts.main')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+@section('title')
   <title>Dashboard</title>
-</head>
+@endsection
 
-<body>
-  <center>
-    <h1>Halo, {{ auth()->user()->name }}</h1>
-    <p>Role: Admin</p>
-
-    <form action="{{ route('logout') }}" method="POST">
-      @csrf
-      <button type="submit">Keluar</button>
-    </form>
-  </center>
-</body>
-
-</html>
+@section('content')
+  <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+    Dashboard
+  </h2>
+@endsection

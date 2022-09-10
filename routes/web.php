@@ -20,7 +20,7 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 
     Route::prefix('/admin')->group(function () {
-        Route::get('/', [HomeController::class])
+        Route::get('/', [HomeController::class, 'index'])
             ->name('admin.dashboard');
     });
 });
