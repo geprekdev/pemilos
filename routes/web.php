@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,8 +20,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])
         ->name('logout');
 
-    Route::prefix('/admin')->group(function () {
+    Route::prefix('/admin')->name('admin.')->group(function () {
         Route::get('/', [HomeController::class, 'index'])
-            ->name('admin.dashboard');
+            ->name('dashboard');
+
+        Route::resource('/users', UserController::class);
     });
 });
