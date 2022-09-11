@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use LogicException;
 
 class UserController extends Controller
 {
@@ -97,8 +98,20 @@ class UserController extends Controller
         return redirect(route('admin.users.index'))->with('success', 'Berhasil mengedit user.');
     }
 
-    public function destroy($id)
+    public function destroy(User $user)
     {
-        //
+        abort_if(
+            (!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]) || $user->role_id === User::SUPER_ADMIN)
+                || (auth()->user()->role_id === User::ADMIN && $user->role_id === User::ADMIN),
+            404
+        );
+
+        try {
+            $user->delete();
+        } catch (LogicException) {
+            return back()->withErrors('Pengguna tidak dapat dihapus karena pengguna sudah melakukan vote.');
+        }
+
+        return redirect(route('admin.users.index'))->with('success', 'Berhasil menghapus user.');
     }
 }
