@@ -24,6 +24,16 @@
       </span>
     @enderror
 
+    <label for="username" class="block mb-2 mt-4 text-sm font-medium text-gray-700 dark:text-gray-400">Username</label>
+    <input
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
+      name="username" type="text" id="username" value="{{ $user->username }}">
+    @error('username')
+      <span class="text-xs text-red-600 dark:text-red-400">
+        {{ $message }}
+      </span>
+    @enderror
+
     <div class="mt-4 text-sm">
       <span class="text-gray-700 dark:text-gray-400">
         Role

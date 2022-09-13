@@ -58,7 +58,7 @@ class UserController extends Controller
 
         $credentials = $request->validate([
             'name' => ['required', 'string'],
-            'username' => ['required', 'string'],
+            'username' => ['required', 'string', 'unique:users,username'],
             'role_id' => ['required', 'numeric', "min:{$roleMin}", "max:{$roleMax}"],
         ]);
 
@@ -123,6 +123,7 @@ class UserController extends Controller
 
         $data = $request->validate([
             'name' => ['required', 'string'],
+            'username' => ['required', 'string', 'unique:users,username'],
             'role_id' => ['required', 'numeric', "min:{$roleMin}", "max:{$roleMax}"],
         ]);
 
