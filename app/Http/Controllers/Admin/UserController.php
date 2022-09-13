@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 use LogicException;
 
 class UserController extends Controller
@@ -123,7 +125,7 @@ class UserController extends Controller
 
         $data = $request->validate([
             'name' => ['required', 'string'],
-            'username' => ['required', 'string', 'unique:users,username'],
+            'username' => ['required', 'string'],
             'role_id' => ['required', 'numeric', "min:{$roleMin}", "max:{$roleMax}"],
         ]);
 
@@ -136,7 +138,11 @@ class UserController extends Controller
             $data['class'] = $class['class'];
         }
 
-        $user->update($data);
+        try {
+            $user->update($data);
+        } catch (Exception) {
+            throw ValidationException::withMessages(['username' => 'Username ini sudah dipakai oleh user lain']);
+        }
 
         return redirect(route('admin.users.index'))->with('success', 'Berhasil mengedit user.');
     }
