@@ -24,6 +24,6 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [HomeController::class, 'index'])
             ->name('dashboard');
 
-        Route::resource('/users', UserController::class);
+        Route::resource('/users', UserController::class)->except('show');
     });
 });

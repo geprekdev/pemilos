@@ -32,17 +32,63 @@ class UserController extends Controller
 
     public function create()
     {
-        //
+        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
+
+        $roles = [
+            User::STUDENT => 'Murid',
+            User::TEACHER => 'Guru',
+            User::STAFF => 'Staff',
+        ];
+
+        if (auth()->user()->role_id === User::SUPER_ADMIN) {
+            $roles[User::ADMIN] = 'Administrator';
+        }
+
+        return view('admin.users.create', compact('roles'));
     }
 
     public function store(Request $request)
     {
-        //
-    }
+        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
 
-    public function show($id)
-    {
-        //
+        $roleMin = auth()->user()->role_id === User::SUPER_ADMIN
+            ? User::ADMIN
+            : User::STUDENT;
+        $roleMax = User::STAFF;
+
+        $credentials = $request->validate([
+            'name' => ['required', 'string'],
+            'username' => ['required', 'string'],
+            'role_id' => ['required', 'numeric', "min:{$roleMin}", "max:{$roleMax}"],
+        ]);
+
+        $credentials['class'] = null;
+        if ((int) $credentials['role_id'] === User::STUDENT) {
+            $class = $request->validate([
+                'class' => ['required', 'string'],
+            ]);
+
+            $credentials['class'] = $class['class'];
+        }
+
+        switch ($credentials['role_id']) {
+            case User::ADMIN:
+                $credentials['password'] = bcrypt('ADMIN' . $credentials['username']);
+                break;
+            case User::STUDENT:
+                $credentials['password'] = bcrypt('MURID' . $credentials['username']);
+                break;
+            case User::TEACHER:
+                $credentials['password'] = bcrypt('GURU' . $credentials['username']);
+                break;
+            case User::STAFF:
+                $credentials['password'] = bcrypt('STAFF' . $credentials['username']);
+                break;
+        }
+
+        User::create($credentials);
+
+        return redirect(route('admin.users.index'))->with('success', 'Berhasil menambah user.');
     }
 
     public function edit(User $user)
@@ -68,11 +114,7 @@ class UserController extends Controller
 
     public function update(Request $request, User $user)
     {
-        abort_if(
-            (!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]) || $user->role_id === User::SUPER_ADMIN)
-                || (auth()->user()->role_id === User::ADMIN && $user->role_id === User::ADMIN),
-            404
-        );
+        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
 
         $roleMin = auth()->user()->role_id === User::SUPER_ADMIN
             ? User::ADMIN
