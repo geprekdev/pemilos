@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Candidate;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CandidateController extends Controller
 {
@@ -48,14 +49,31 @@ class CandidateController extends Controller
         //
     }
 
-    public function edit($id)
+    public function edit(Request $request, Candidate $candidate)
     {
-        //
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
+
+        return view('admin.candidates.edit', compact('candidate'));
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, Candidate $candidate)
     {
-        //
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
+
+        $data = $request->validate([
+            'name' => ['required', 'string'],
+            'label' => ['required', 'string', 'in:MPK,OSIS'],
+            'number' => ['required', 'numeric', 'min:1'],
+            'image' => ['required', 'mimes:png,jpg,svg,webp', 'max:2048'],
+        ]);
+
+        $data['image'] = $request->file('image')->store('candidates');
+
+        Storage::delete($candidate->image);
+
+        $candidate->update($data);
+
+        return redirect()->route('admin.candidates.index')->with('success', 'Berhasil mengedit kandidat.');
     }
 
     public function destroy($id)

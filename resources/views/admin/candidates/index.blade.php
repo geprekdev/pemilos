@@ -33,10 +33,10 @@
     @endif
 
     @foreach ($labels as $label => $candidates)
-      <h4 class="mt-6 text-lg font-semibold text-gray-600 dark:text-gray-300">{{ $label }}</h4>
-      <div class="flex flex-wrap basis-full flex-col md:flex-row gap-5 mt-5">
+      <h4 class="mt-10 text-2xl font-semibold text-gray-600 dark:text-gray-300">{{ $label }}</h4>
+      <div class="flex flex-wrap justify-center flex-col md:flex-row gap-8 mt-5">
         @foreach ($candidates as $candidate)
-          <div class="flex-1 p-4 text-center bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <div class="w-full md:w-[45%] p-4 text-center bg-white rounded-lg shadow-xs dark:bg-gray-800">
             <div class="flex justify-end mb-2">
               <a href="{{ route('admin.candidates.edit', ['candidate' => $candidate->id]) }}"
                 class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
