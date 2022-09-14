@@ -15,4 +15,9 @@ class Candidate extends Model
         'number',
         'image',
     ];
+
+    public function votes()
+    {
+        return $this->hasMany(Vote::class);
+    }
 }

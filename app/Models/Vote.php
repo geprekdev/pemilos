@@ -14,4 +14,14 @@ class Vote extends Model
         'candidate_id',
         'label',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function candidate()
+    {
+        return $this->belongsTo(Candidate::class);
+    }
 }

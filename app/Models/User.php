@@ -40,4 +40,9 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function votes()
+    {
+        return $this->hasMany(Vote::class);
+    }
 }
