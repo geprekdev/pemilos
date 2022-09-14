@@ -44,11 +44,6 @@ class CandidateController extends Controller
         return redirect()->route('admin.candidates.index')->with('success', 'Berhasil menambah kandidat.');
     }
 
-    public function show($id)
-    {
-        //
-    }
-
     public function edit(Request $request, Candidate $candidate)
     {
         abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
