@@ -59,12 +59,17 @@ class CandidateController extends Controller
             'name' => ['required', 'string'],
             'label' => ['required', 'string', 'in:MPK,OSIS'],
             'number' => ['required', 'numeric', 'min:1'],
-            'image' => ['required', 'mimes:png,jpg,svg,webp', 'max:2048'],
         ]);
 
-        $data['image'] = $request->file('image')->store('candidates');
+        if ($request->hasFile('image')) {
+            $request->validate([
+                'image' => ['required', 'mimes:png,jpg,svg,webp', 'max:2048'],
+            ]);
 
-        Storage::delete($candidate->image);
+            $data['image'] = $request->file('image')->store('candidates');
+
+            Storage::delete($candidate->image);
+        }
 
         $candidate->update($data);
 
