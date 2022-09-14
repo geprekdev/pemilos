@@ -73,6 +73,8 @@ class CandidateController extends Controller
 
     public function destroy(Candidate $candidate)
     {
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
+
         Storage::delete($candidate->image);
 
         $candidate->delete();
