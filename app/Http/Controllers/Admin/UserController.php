@@ -13,13 +13,9 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
 
         $users = User::query();
-
-        $users->when(auth()->user()->role_id === User::ADMIN, function ($query) {
-            $query->whereNotIn('role_id', [User::SUPER_ADMIN, User::ADMIN]);
-        });
 
         $users->when(!empty($request->search), function ($query) use ($request) {
             $query->where('name', 'LIKE', "%{$request->search}%")
@@ -34,28 +30,23 @@ class UserController extends Controller
 
     public function create()
     {
-        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
 
         $roles = [
             User::STUDENT => 'Murid',
             User::TEACHER => 'Guru',
             User::STAFF => 'Staff',
+            User::ADMIN => 'Administrator',
         ];
-
-        if (auth()->user()->role_id === User::SUPER_ADMIN) {
-            $roles[User::ADMIN] = 'Administrator';
-        }
 
         return view('admin.users.create', compact('roles'));
     }
 
     public function store(Request $request)
     {
-        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
 
-        $roleMin = auth()->user()->role_id === User::SUPER_ADMIN
-            ? User::ADMIN
-            : User::STUDENT;
+        $roleMin = User::ADMIN;
         $roleMax = User::STAFF;
 
         $credentials = $request->validate([
@@ -95,32 +86,23 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
-        abort_if(
-            (!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]) || $user->role_id === User::SUPER_ADMIN)
-                || (auth()->user()->role_id === User::ADMIN && $user->role_id === User::ADMIN),
-            404
-        );
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN || $user->role_id === User::SUPER_ADMIN, 404);
 
         $roles = [
             User::STUDENT => 'Murid',
             User::TEACHER => 'Guru',
             User::STAFF => 'Staff',
+            User::ADMIN => 'Administrator',
         ];
-
-        if (auth()->user()->role_id === User::SUPER_ADMIN) {
-            $roles[User::ADMIN] = 'Administrator';
-        }
 
         return view('admin.users.edit', compact('user', 'roles'));
     }
 
     public function update(Request $request, User $user)
     {
-        abort_if(!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]), 404);
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN, 404);
 
-        $roleMin = auth()->user()->role_id === User::SUPER_ADMIN
-            ? User::ADMIN
-            : User::STUDENT;
+        $roleMin = User::ADMIN;
         $roleMax = User::STAFF;
 
         $data = $request->validate([
@@ -149,16 +131,12 @@ class UserController extends Controller
 
     public function destroy(User $user)
     {
-        abort_if(
-            (!in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN]) || $user->role_id === User::SUPER_ADMIN)
-                || (auth()->user()->role_id === User::ADMIN && $user->role_id === User::ADMIN),
-            404
-        );
+        abort_if(auth()->user()->role_id !== User::SUPER_ADMIN || $user->role_id === User::SUPER_ADMIN, 404);
 
         try {
             $user->delete();
         } catch (LogicException) {
-            return back()->withErrors('Pengguna tidak dapat dihapus karena pengguna sudah melakukan vote.');
+            return back()->withErrors('Pengguna tidak dapat dihapus karena pengguna sudah melakukan vote.', 'delete');
         }
 
         return redirect(route('admin.users.index'))->with('success', 'Berhasil menghapus user.');
