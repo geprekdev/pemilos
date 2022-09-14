@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CandidateController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\AuthController;
@@ -25,5 +26,7 @@ Route::middleware('auth')->group(function () {
             ->name('dashboard');
 
         Route::resource('/users', UserController::class)->except('show');
+
+        Route::resource('/candidates', CandidateController::class);
     });
 });

@@ -21,7 +21,7 @@ class CandidateFactory extends Factory
             'name' => fake()->name(),
             'label' => collect(['MPK', 'OSIS'])->random(),
             'number' => fake()->numberBetween(1, 3),
-            'image' => Str::random(),
+            'image' => 'candidate-no-pic.jpg',
         ];
     }
 }
