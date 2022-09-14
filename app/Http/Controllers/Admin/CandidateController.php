@@ -71,8 +71,12 @@ class CandidateController extends Controller
         return redirect()->route('admin.candidates.index')->with('success', 'Berhasil mengedit kandidat.');
     }
 
-    public function destroy($id)
+    public function destroy(Candidate $candidate)
     {
-        //
+        Storage::delete($candidate->image);
+
+        $candidate->delete();
+
+        return redirect()->route('admin.candidates.index')->with('success', 'Berhasil menghapus kandidat.');
     }
 }
