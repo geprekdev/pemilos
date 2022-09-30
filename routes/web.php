@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\VoteController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\VoterController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
@@ -15,9 +16,11 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', function () {
-        return view('home');
-    })->name('home');
+    Route::get('/', [VoterController::class, 'home'])->name('home');
+
+    Route::get('/vote', [VoterController::class, 'vote'])->name('vote');
+
+    Route::post('/vote', [VoterController::class, 'submit'])->name('submit');
 
     Route::post('/logout', [AuthController::class, 'logout'])
         ->name('logout');
