@@ -49,6 +49,14 @@
         legend: {
           display: false,
         },
+        scales: {
+          yAxes: [{
+            display: true,
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        },
       },
     });
 
@@ -68,6 +76,14 @@
         responsive: true,
         legend: {
           display: false,
+        },
+        scales: {
+          yAxes: [{
+            display: true,
+            ticks: {
+              beginAtZero: true
+            }
+          }]
         },
       },
     });
