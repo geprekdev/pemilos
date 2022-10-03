@@ -22,8 +22,9 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/vote', [VoterController::class, 'submit'])->name('submit');
 
-    Route::post('/logout', [AuthController::class, 'logout'])
-        ->name('logout');
+    Route::get('/logout', [VoterController::class, 'logout'])->name('logout');
+
+    Route::delete('/logout', [AuthController::class, 'logout'])->name('destroy');
 
     Route::prefix('/admin')->name('admin.')->group(function () {
         Route::get('/', [HomeController::class, 'index'])

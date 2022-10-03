@@ -24,11 +24,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended(
-                in_array(auth()->user()->role_id, [User::SUPER_ADMIN, User::ADMIN])
-                    ? route('admin.dashboard')
-                    : RouteServiceProvider::HOME
-            );
+            return redirect()->intended(RouteServiceProvider::HOME);
         }
 
         return back()->withErrors([

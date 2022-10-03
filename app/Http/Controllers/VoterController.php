@@ -16,7 +16,7 @@ class VoterController extends Controller
     public function vote()
     {
         if (sizeof(auth()->user()->votes) === 2) {
-            return back();
+            return redirect()->route('logout');
         }
 
         $labels = Candidate::query()
@@ -59,5 +59,18 @@ class VoterController extends Controller
                 'label' => 'MPK'
             ]
         ]);
+
+        return view('voter.logout');
+    }
+
+    public function logout()
+    {
+        abort_if(in_array(auth()->user()->role_id, [User::ADMIN, User::SUPER_ADMIN]), 403);
+
+        if (sizeof(auth()->user()->votes) !== 2) {
+            return redirect()->route('vote');
+        }
+
+        return view('voter.logout');
     }
 }
