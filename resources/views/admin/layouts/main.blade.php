@@ -207,6 +207,7 @@
             <li class="flex">
               <form action="{{ route('logout') }}" method="POST">
                 @csrf
+                @method('DELETE')
                 <button onclick="return window.confirm('Apakah anda yakin untuk keluar?')" type="submit"
                   class="rounded-md focus:outline-none focus:shadow-outline-purple" aria-label="Logout">
                   <svg fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
