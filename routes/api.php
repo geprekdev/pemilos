@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Candidate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/live-count', function () {
+    $candidates = Candidate::query()
+        ->select('name', 'label', 'number')
+        ->withCount('votes')
+        ->orderBy('number')
+        ->get();
+
+    $osis = $candidates->where('label', 'OSIS');
+    $mpk = $candidates->where('label', 'MPK');
+
+    return response()->json([
+        'osis' => [
+            'labels' => $osis->pluck('name'),
+            'data' => $osis->pluck('votes_count')
+        ],
+        'mpk' => [
+            'labels' => $mpk->pluck('name'),
+            'data' => $mpk->pluck('votes_count')
+        ]
+    ]);
+})->name('api.live-count');
