@@ -64,24 +64,35 @@ class UserController extends Controller
             $credentials['class'] = $class['class'];
         }
 
+        $password = null;
         switch ($credentials['role_id']) {
             case User::ADMIN:
-                $credentials['password'] = bcrypt('ADMIN' . $credentials['username']);
+                $password = 'ADMIN' . $credentials['username'];
+                $credentials['password'] = bcrypt($password);
                 break;
             case User::STUDENT:
-                $credentials['password'] = bcrypt('MURID' . $credentials['username']);
+                $password = 'MURID' . $credentials['username'];
+                $credentials['password'] = bcrypt($password);
                 break;
             case User::TEACHER:
-                $credentials['password'] = bcrypt('GURU' . $credentials['username']);
+                $password = 'GURU' . $credentials['username'];
+                $credentials['password'] = bcrypt($password);
                 break;
             case User::STAFF:
-                $credentials['password'] = bcrypt('STAFF' . $credentials['username']);
+                $password = 'STAFF' . $credentials['username'];
+                $credentials['password'] = bcrypt($password);
                 break;
         }
 
         User::create($credentials);
 
-        return redirect(route('admin.users.index'))->with('success', 'Berhasil menambah user.');
+        return redirect(route('admin.users.index'))
+            ->with(
+                'success',
+                "Berhasil menambah user. <br> 
+                Username: {$credentials['username']} <br> 
+                Password: {$password}"
+            );
     }
 
     public function edit(User $user)

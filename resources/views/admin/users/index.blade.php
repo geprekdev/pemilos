@@ -46,7 +46,7 @@
               clip-rule="evenodd"></path>
           </svg>
         </div>
-        <span class="ml-5 text-sm font-normal">{{ session()->get('success') }}</span>
+        <span class="ml-5 text-sm font-normal">{!! session()->get('success') !!}</span>
       </div>
     @endif
     <div class="w-full overflow-x-auto">
