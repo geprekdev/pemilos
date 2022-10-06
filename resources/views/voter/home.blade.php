@@ -49,7 +49,7 @@
   <section id="introduction" class="w-full max-w-5xl mx-auto">
     <div class="flex flew-wrap flex-col sm:flex-row">
       <div class="flex-auto w-full p-7 sm:w-3/4">
-        <img src="/img/calon.png" alt="" />
+        <img src="/img/all_paslon.png" alt="" />
       </div>
 
       <div class="flex-auto self-center p-4 sm:p-0">
@@ -57,7 +57,7 @@
         <div class="flex self-center gap-5">
           <span class="h-12 bg-blue-700 p-[1.5px] rounded-3xl self-center"></span>
           <p>
-            Untuk memilih calon ketua OSIS dan paslon wakil & ketua MPK, kamu
+            Untuk memilih calon ketua OSIS dan paslon ketua & wakil MPK, kamu
             bisa terus gulir halaman ini kebawah
           </p>
         </div>
@@ -77,64 +77,74 @@
     <div class="max-w-5xl my-1 mx-auto w-full sm:my-16 sm:w-[1024px]">
       <div class="flex flex-wrap p-4 flex-col sm:flex-row gap-11">
         <div class="flex-auto w-52 sm:w-[5%]">
-          <img src="/img/paslon1_mpk.png" class="max-w-full h-auto" alt="Calon" />
+          <img src="/img/foto_osis_01.png" class="max-w-full h-auto" alt="Calon" />
         </div>
         <div class="flex-auto text-slate-800 w-full sm:w-[45%]">
           <div class="mb-8">
             <span class="text-sm font-semibold text-[#3063af]">Caketos 1</span>
-            <h2 class="text-3xl font-bold">Yohanes Dwiki Indarto</h2>
-            <span class="text-sm">BERSAMA SAYA IDOLA BISA!</span>
+            <h2 class="text-3xl font-bold">Rafif Ali Fahrezi</h2>
+            <span class="text-sm">SNAPAN KEMBALI JAYA</span>
           </div>
 
           <div class="flex flex-wrap flex-col sm:flex-row">
             <div class="flex-auto pr-7 text-sm w-full sm:w-1/3">
               <p class="font-semibold text-[#3063af] my-4">Visi</p>
-              <span>Menjadikan OSIS sebagai sarana pengembangan potensi siswa
-                agar memiliki karakter Inovatif, Disiplin, Kolaboratif serta
-                beriman kepada Tuhan Yang Maha Esa dan Meningkatkan pandangan
-                baik terhadap OSIS SMKN 8 Semarang agar menjadi sekolah yang
-                unggul dalam prestasi.
+              <span>
+                Membuat SMK Negeri 8 Semarang menjadi lebih menonjol di pandangan masyarakat melalui prestasi yang
+                akan diraih serta melalui event inovatif nan kreatif yang diadakan oleh OSIS bersama pihak sekolah.
               </span>
             </div>
 
             <div class="flex-auto pr-7 w-full text-sm sm:w-1/3">
               <p class="font-semibold text-[#3063af] my-4">Misi</p>
               <ul class="list-inside border-box">
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menjadikan OSIS sebagai wadah aspirasi bagi para siswa.
+                  Memberikan panggung kepada siswa siswa Snapan yang memiliki keunggulan di setiap event sekolah.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mempererat kekeluargaan antara seluruh anggota sekolah.
+                  Bekerja sama dengan ekstrakurikuler dan organisasi di sekolah untuk mengadakan event yang lebih
+                  meriah.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menciptakan lingkungan sekolah yang kondusif.
+
+                  Mengelola akun medsos SMK 8 menjadi lebih baik terkait konten yang diposting.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Merangkul siswa supaya lebih aktif dalam kegiatan sekolah.
+                  Membantu menyalurkan aspirasi siswa SMK 8 terhadap kinerja OSIS dan Sekolah.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Menjadikan OSIS sebagai organisasi yang paling berpengaruh di setiap kegiatan yang diadakan oleh SMK
+                  8.
                 </li>
               </ul>
             </div>
@@ -142,32 +152,106 @@
             <div class="flex-auto pr-7 text-sm">
               <p class="font-semibold text-[#3063af] my-4">Program kerja</p>
               <ul class="list-inside">
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menjadikan OSIS sebagai wadah aspirasi bagi para siswa.
+                  Membuat forum yang berisi para pengurus organisasi dan ekstrakurikuler pilihan.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mempererat kekeluargaan antara seluruh anggota sekolah.
+                  Membuat konten yang sedang trend di akun tik tok SMK 8 Semarang.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menciptakan lingkungan sekolah yang kondusif.
+                  Sedikit menambah agenda/kegiatan di setiap event OSIS.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block rounded-3xl bg-[#3063af] text-red-500 w-32 h-1 mx-auto my-20"></div>
+    </div>
+
+    <div class="max-w-5xl my-1 mx-auto w-full sm:my-16 sm:w-[1024px]">
+      <div class="flex flex-wrap p-4 flex-col sm:flex-row gap-11">
+        <div class="flex-auto w-52 sm:w-[5%]">
+          <img src="/img/foto_osis_02.png" class="max-w-full h-auto" alt="Calon" />
+        </div>
+        <div class="flex-auto text-slate-800 w-full sm:w-[45%]">
+          <div class="mb-8">
+            <span class="text-sm font-semibold text-[#3063af]">Caketos 2</span>
+            <h2 class="text-3xl font-bold">Yeski Kristiawan</h2>
+            <span class="text-sm">MAJU BERSAMA DUA</span>
+          </div>
+
+          <div class="flex flex-wrap flex-col sm:flex-row">
+            <div class="flex-auto pr-7 text-sm w-full sm:w-1/3">
+              <p class="font-semibold text-[#3063af] my-4">Visi</p>
+              <span>
+                Menjadikan OSIS yang selalu berorientasi ke depan dengan landasan Pancasila untuk memajukan SMKN 8
+                Semarang.
+              </span>
+            </div>
+
+            <div class="flex-auto pr-7 w-full text-sm sm:w-1/3">
+              <p class="font-semibold text-[#3063af] my-4">Misi</p>
+              <ul class="list-inside border-box">
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Menjadikan OSIS sebagai wadah kreatifitas dan aspirasi.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Menciptakan lingkungan sekolah yang nyaman.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Menjalin kekeluargaan warga SMKN 8 Semarang.
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-auto pr-7 text-sm">
+              <p class="font-semibold text-[#3063af] my-4">Program kerja</p>
+              <ul class="list-inside">
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengadakan kegiatan yang mengembangkan minat dan bakat siswa.
                 </li>
               </ul>
             </div>
@@ -185,7 +269,7 @@
   <section class="w-full bg-[#fffbe0] mb-0">
     <div class="max-w-5xl mx-auto w-full p-4 sm:w-[1024px]">
       <h1 class="text-3xl text-[#3063af] font-bold sm:text-4xl">
-        Calon Ketua OSIS
+        Paslon Ketua & Wakil MPK
       </h1>
     </div>
 
@@ -193,64 +277,63 @@
     <div class="max-w-5xl my-1 mx-auto w-full sm:my-16 sm:w-[1024px]">
       <div class="flex flex-wrap p-4 flex-col sm:flex-row gap-11">
         <div class="flex-auto w-52 sm:w-[5%]">
-          <img src="/img/paslon1_mpk.png" class="max-w-full h-auto" alt="Calon" />
+          <img src="/img/foto_mpk_01.png" class="max-w-full h-auto" alt="Calon" />
         </div>
         <div class="flex-auto text-slate-800 w-full sm:w-[45%]">
           <div class="mb-8">
-            <span class="text-sm font-semibold text-[#3063af]">Caketos 1</span>
-            <h2 class="text-3xl font-bold">Yohanes Dwiki Indarto</h2>
-            <span class="text-sm">BERSAMA SAYA IDOLA BISA!</span>
+            <span class="text-sm font-semibold text-[#3063af]">Paslon 1</span>
+            <h2 class="text-3xl font-bold">Mayda Susanti & Cheril Keiza Anzella</h2>
           </div>
 
           <div class="flex flex-wrap flex-col sm:flex-row">
             <div class="flex-auto pr-7 text-sm w-full sm:w-1/3">
               <p class="font-semibold text-[#3063af] my-4">Visi</p>
-              <span>Menjadikan OSIS sebagai sarana pengembangan potensi siswa
-                agar memiliki karakter Inovatif, Disiplin, Kolaboratif serta
-                beriman kepada Tuhan Yang Maha Esa dan Meningkatkan pandangan
-                baik terhadap OSIS SMKN 8 Semarang agar menjadi sekolah yang
-                unggul dalam prestasi.
+              <span>
+                Mewujudkan MPK sebagai majelis yang menjunjung tinggi rasa tanggung jawab dan kedisiplinan serta
+                berakhlak muliademi mewujudkan generasi muda yang berkualitas.
               </span>
             </div>
 
             <div class="flex-auto pr-7 w-full text-sm sm:w-1/3">
               <p class="font-semibold text-[#3063af] my-4">Misi</p>
               <ul class="list-inside border-box">
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menjadikan OSIS sebagai wadah aspirasi bagi para siswa.
+                  Meningkatkan pengawasan terhadap pengurus osis.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mempererat kekeluargaan antara seluruh anggota sekolah.
+                  Mengoptimalkan kinerja MPK SMKN 8 Semarang sebagai wadah menyebarkan apresiasi siswa dalam mendukung
+                  keterbukaan informasidi lingkungan sekolah.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menciptakan lingkungan sekolah yang kondusif.
+                  Membentuk karakter MPK yangbaik dan bertanggung jawab kepada OSIS,Guru,dan semua warga SMKN 8
+                  Semarang.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Merangkul siswa supaya lebih aktif dalam kegiatan sekolah.
+                  Meningkatkan etos kerja serta perfesionalitas dalam berorganisasi.
                 </li>
               </ul>
             </div>
@@ -258,32 +341,166 @@
             <div class="flex-auto pr-7 text-sm">
               <p class="font-semibold text-[#3063af] my-4">Program kerja</p>
               <ul class="list-inside">
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menjadikan OSIS sebagai wadah aspirasi bagi para siswa.
+                  Melakukan pemilu ketua osis.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mempererat kekeluargaan antara seluruh anggota sekolah.
+                  Mematangkan proker-proker MPK yang belum terjalani dari angkatan-angkatan sebelumnya.
                 </li>
-                <li class="flex items-center">
+                <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Menciptakan lingkungan sekolah yang kondusif.
+                  Mengadakan rapat wajib anggota MPK dan OSIS guna keterbukaanya kepada aspirasi siswa serta
+                  meningkatkan keharmonisan dan solidaritas anggota MPK.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Bekerja sama dengan pengurus OSIS unuk mengadakan event guna menggembangkan bakat siswa siswi SMKN 8
+                  Semarang.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block rounded-3xl bg-[#3063af] text-red-500 w-32 h-1 mx-auto my-20"></div>
+    </div>
+
+    <div class="max-w-5xl my-1 mx-auto w-full sm:my-16 sm:w-[1024px]">
+      <div class="flex flex-wrap p-4 flex-col sm:flex-row gap-11">
+        <div class="flex-auto w-52 sm:w-[5%]">
+          <img src="/img/foto_mpk_02.png" class="max-w-full h-auto" alt="Calon" />
+        </div>
+        <div class="flex-auto text-slate-800 w-full sm:w-[45%]">
+          <div class="mb-8">
+            <span class="text-sm font-semibold text-[#3063af]">Paslon 2</span>
+            <h2 class="text-3xl font-bold">Diyah Putri Saraswait & Emmania Putri Islamadina</h2>
+          </div>
+
+          <div class="flex flex-wrap flex-col sm:flex-row">
+            <div class="flex-auto pr-7 text-sm w-full sm:w-1/3">
+              <p class="font-semibold text-[#3063af] my-4">Visi</p>
+              <span>
+                Menjadikan MPK SMKN 8 SEMARANG sebagai organisasi legislatif yang TTPB (Terbuka, Terpercaya,
+                Professional & Bertanggung Jawab). Serta mengoptimalkan fungsi organisasi untuk kepentingan bersama yang
+                dilandasi iman & taqwa dengan didukung oleh IPTEK yang unggul untuk mencapai tujuan bersama.
+              </span>
+            </div>
+
+            <div class="flex-auto pr-7 w-full text-sm sm:w-1/3">
+              <p class="font-semibold text-[#3063af] my-4">Misi</p>
+              <ul class="list-inside border-box">
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Menggali informasi yang faktual guna terciptanya lingkungan SMKN 8 Semarang yang aman dan nyaman.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Menciptakan ruang aspirasi sebagai wadah untuk memberi kritik dan saran yang membangun.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengintegrasikan hubungan MPK dengan OSIS serta mendukung secara moril dan materil kegiatan OSIS
+                  dengan mengedepankan asas kekeluargaan.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Meningkatkan profesionalitas kinerja dalam mengevaluasi seluruh kegiatan yang telah terlaksanakan oleh
+                  OSIS.
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-auto pr-7 text-sm">
+              <p class="font-semibold text-[#3063af] my-4">Program kerja</p>
+              <ul class="list-inside">
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengadakan SUMPS (Sidang Umum Majelis Perwakilan Siswa) dan STT (Sidang Tengah Tahun).
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Pembuatan Buku Aspirasi Idola Generasi - Z untuk disalurkan kepada pihak sekolah terkait kritik dan
+                  saran siswa siswi SMKN 8 Semarang.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengadakan KMT (Konferensi Meja Terbuka) secara rutin sekurang-kurangnya setiap minggunya.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengadakan suatu event yang membangun daya dan minat kreativitas untuk bisa diaplikasikan keranah yang
+                  lebih luas.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengadakan orasi serta pemilihan ketua MPK dan ketua OSIS periode selanjutnya.
                 </li>
               </ul>
             </div>
