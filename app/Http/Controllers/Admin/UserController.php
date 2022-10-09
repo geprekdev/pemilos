@@ -131,13 +131,27 @@ class UserController extends Controller
             $data['class'] = $class['class'];
         }
 
+        $password = match ((int) $data['role_id']) {
+            User::ADMIN => 'ADMIN' . $data['username'],
+            User::STUDENT => 'MURID' . $data['username'],
+            User::TEACHER => 'GURU' . $data['username'],
+            User::STAFF => 'STAFF' . $data['username']
+        };
+        $data['password'] = bcrypt($password);
+
         try {
             $user->update($data);
         } catch (Exception) {
             throw ValidationException::withMessages(['username' => 'Username ini sudah dipakai oleh user lain']);
         }
 
-        return redirect(route('admin.users.index'))->with('success', 'Berhasil mengedit user.');
+        return redirect(route('admin.users.index'))
+            ->with(
+                'success',
+                "Berhasil mengedit user. <br> 
+                Username: {$data['username']} <br> 
+                Password: {$password}"
+            );
     }
 
     public function destroy(User $user)
