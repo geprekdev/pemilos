@@ -289,8 +289,9 @@
             <div class="flex-auto pr-7 text-sm w-full sm:w-1/3">
               <p class="font-semibold text-[#3063af] my-4">Visi</p>
               <span>
-                Mewujudkan MPK sebagai majelis yang menjunjung tinggi rasa tanggung jawab dan kedisiplinan serta
-                berakhlak muliademi mewujudkan generasi muda yang berkualitas.
+                Mewujudkan MPK SMKN 8 SEMARANG sebagai majelis yang menjunjung tinggi rasa tanggung jawab dan
+                kedisiplinan serta
+                berakhlak mulia demi mewujudkan generasi muda yang berkualitas.
               </span>
             </div>
 
@@ -304,7 +305,7 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Meningkatkan pengawasan terhadap pengurus osis.
+                  Meningkatkan pengawasan terhadap pengurus OSIS.
                 </li>
                 <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -314,7 +315,7 @@
                   </svg>
 
                   Mengoptimalkan kinerja MPK SMKN 8 Semarang sebagai wadah menyebarkan apresiasi siswa dalam mendukung
-                  keterbukaan informasidi lingkungan sekolah.
+                  keterbukaan informasi di lingkungan sekolah.
                 </li>
                 <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -323,7 +324,7 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Membentuk karakter MPK yangbaik dan bertanggung jawab kepada OSIS,Guru,dan semua warga SMKN 8
+                  Membentuk karakter MPK yang baik dan bertanggung jawab kepada OSIS, Guru, dan semua warga SMKN 8
                   Semarang.
                 </li>
                 <li class="flex items-center my-3">
@@ -348,7 +349,7 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Melakukan pemilu ketua osis.
+                  Melakukan pemilihan ketua osis.
                 </li>
                 <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -357,7 +358,7 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mematangkan proker-proker MPK yang belum terjalani dari angkatan-angkatan sebelumnya.
+                  Mematangkan proker-proker MPK yang belum terjalani dari angkatan sebelumnya.
                 </li>
                 <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -366,8 +367,8 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mengadakan rapat wajib anggota MPK dan OSIS guna keterbukaanya kepada aspirasi siswa serta
-                  meningkatkan keharmonisan dan solidaritas anggota MPK.
+                  Mengadakan rapat WAJIB anggota MPK dan OSIS guna keterbukaannya kepada aspirasi siswa serta
+                  meningkatkan keharmonisan dan solidaritas sesama anggota.
                 </li>
                 <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -376,8 +377,8 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Bekerja sama dengan pengurus OSIS unuk mengadakan event guna menggembangkan bakat siswa siswi SMKN 8
-                  Semarang.
+                  Bekerja sama dengan pengurus OSIS unuk mengadakan event guna mengembangkan bakat siswa siswi SMKN 8
+                  SEMARANG.
                 </li>
               </ul>
             </div>
@@ -395,7 +396,7 @@
         <div class="flex-auto text-slate-800 w-full sm:w-[45%]">
           <div class="mb-8">
             <span class="text-sm font-semibold text-[#3063af]">Paslon 2</span>
-            <h2 class="text-3xl font-bold">Diyah Putri Saraswait & Emmania Putri Islamadina</h2>
+            <h2 class="text-3xl font-bold">Diyah Putri Saraswati & Emmania Putri Islamadina</h2>
           </div>
 
           <div class="flex flex-wrap flex-col sm:flex-row">
@@ -403,8 +404,8 @@
               <p class="font-semibold text-[#3063af] my-4">Visi</p>
               <span>
                 Menjadikan MPK SMKN 8 SEMARANG sebagai organisasi legislatif yang TTPB (Terbuka, Terpercaya,
-                Professional & Bertanggung Jawab). Serta mengoptimalkan fungsi organisasi untuk kepentingan bersama yang
-                dilandasi iman & taqwa dengan didukung oleh IPTEK yang unggul untuk mencapai tujuan bersama.
+                Professional & Bertanggung jawab) serta mengoptimalkan fungsi organisasi untuk kepentingan bersama yang
+                dilandasi iman & takwa dengan didukung oleh IPTEK yang unggul untuk mencapai tujuan bersama.
               </span>
             </div>
 
@@ -428,6 +429,15 @@
                   </svg>
 
                   Menciptakan ruang aspirasi sebagai wadah untuk memberi kritik dan saran yang membangun.
+                </li>
+                <li class="flex items-center my-3">
+                  <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  Mengelola aspirasi siswa siswi guna mewujudkan SMKN 8 Semarang menjadi lebih baik dan berkembang.
                 </li>
                 <li class="flex items-center my-3">
                   <svg class="w-4 h-4 mr-1.5 text-[#3063af]" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -490,7 +500,8 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mengadakan suatu event yang membangun daya dan minat kreativitas untuk bisa diaplikasikan keranah yang
+                  Mengadakan suatu event yang membangun daya dan minat kreativitas untuk bisa diaplikasikan ke ranah
+                  yang
                   lebih luas.
                 </li>
                 <li class="flex items-center my-3">
@@ -500,7 +511,7 @@
                       d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
                   </svg>
 
-                  Mengadakan orasi serta pemilihan ketua MPK dan ketua OSIS periode selanjutnya.
+                  Mengadakan orasi serta pemilihan ketua MPK dan OSIS periode selanjutnya.
                 </li>
               </ul>
             </div>
