@@ -6,6 +6,7 @@ use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -79,6 +80,16 @@ Artisan::command('import:user {file}', function ($file) {
                 ]);
 
                 $this->info("\"{$user['name']}\",{$user['username']},{$user['password']}");
+
+                $filename = $user['role_id'] === User::STUDENT
+                    ? $user['class'] . '.csv'
+                    : 'Guru-Karyawan.csv';
+
+                Storage::disk('local')
+                    ->prepend(
+                        "users/{$filename}",
+                        "\"{$user['name']}\",{$user['username']},{$user['password']}"
+                    );
             } catch (QueryException $exception) {
                 $this->warn($exception->getMessage() . PHP_EOL);
             }
