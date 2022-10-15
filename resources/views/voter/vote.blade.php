@@ -40,36 +40,23 @@
   <img class="h-4 w-full sm:h-24" src="/img/grafis_1.png" alt="" />
   <form class="max-w-full flex flex-col justify-center mx-auto bg-[#f0f5ff]" action="{{ route('submit') }}"
     method="POST">
-    @error('general')
-      <div class="relative mx-10 my-5 px-4 py-3 leading-normal text-red-700 bg-red-100 rounded-lg" role="alert">
-        <span class="absolute inset-y-0 left-0 flex items-center ml-4">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-            <path
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-              clip-rule="evenodd" fill-rule="evenodd"></path>
-          </svg>
-        </span>
-        <p class="ml-6">{{ $message }}</p>
+    @if ($errors->any())
+      <div class="relative max-w-sm w-full mx-auto my-5 px-4 py-3 leading-normal text-red-700 bg-red-100 rounded-lg"
+        role="alert">
+        <ul class="ml-4 list-disc">
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
       </div>
-    @enderror
+    @endif
     @csrf
     @method('POST')
     @foreach ($labels as $label => $candidates)
       <h1 class="font-bold text-4xl my-10 text-center text-[#3063af]">
         Kandidat {{ $label }}
       </h1>
-      @if ($errors->has('osis') || $errors->has('mpk'))
-        <div class="relative mx-10 my-5 px-4 py-3 leading-normal text-red-700 bg-red-100 rounded-lg" role="alert">
-          <span class="absolute inset-y-0 left-0 flex items-center ml-4">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-              <path
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                clip-rule="evenodd" fill-rule="evenodd"></path>
-            </svg>
-          </span>
-          <p class="ml-6">{{ $errors->first('osis') ?? $errors->first('mpk') }}</p>
-        </div>
-      @endif
+
       <div class="flex flex-wrap flex-col gap-8 mx-6 mb-10 sm:flex-row sm:mx-auto">
         @foreach ($candidates as $candidate)
           <div class="flex-auto">
