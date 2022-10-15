@@ -25,7 +25,10 @@ class UserController extends Controller
 
         $users = $users->latest('id')->paginate(36);
 
-        return view('admin.users.index', compact('users'));
+        $studentCount = User::where('role_id', User::STUDENT)->count();
+        $nonStudentCount = User::whereIn('role_id', [User::TEACHER, User::STAFF])->count();
+
+        return view('admin.users.index', compact('users', 'studentCount', 'nonStudentCount'));
     }
 
     public function create()

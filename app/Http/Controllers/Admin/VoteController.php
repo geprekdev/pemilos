@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Vote;
 use Illuminate\Http\Request;
 
 class VoteController extends Controller
@@ -24,6 +25,9 @@ class VoteController extends Controller
 
         $users = $users->orderBy('class')->orderBy('name')->paginate(36);
 
-        return view('admin.votes.index', compact('users'));
+        $votesCount = Vote::where('label', 'MPK')->count();
+        $golputCount = User::doesntHave('votes')->whereNotIn('role_id', [User::SUPER_ADMIN, User::ADMIN])->count();
+
+        return view('admin.votes.index', compact('users', 'votesCount', 'golputCount'));
     }
 }

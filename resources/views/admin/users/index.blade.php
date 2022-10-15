@@ -32,6 +32,11 @@
       class="mt-6 h-fit text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Tambah</a>
   </div>
 
+  <div class="flex justify-center gap-4 rounded-lg py-3 my-4 bg-gray-800 text-gray-400">
+    <span class="text-sm font-bold">Jumlah Siswa: {{ $studentCount }}</span>
+    <span class="text-sm font-bold">Jumlah Guru/Karyawan: {{ $nonStudentCount }}</span>
+  </div>
+
   <div class="w-full overflow-hidden rounded-lg shadow-xs mb-8">
     @if (session()->has('success'))
       <div id="toast-success"
