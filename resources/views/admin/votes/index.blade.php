@@ -114,7 +114,9 @@
         </div>
         <div
           class="px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 border-t dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-          {{ $users->links('admin.layouts.paginator') }}
+          {{ $users->appends([
+                  'search' => request()->query('search'),
+              ])->links('admin.layouts.paginator') }}
         </div>
       </div>
     @endsection
