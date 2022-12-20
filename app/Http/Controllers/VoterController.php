@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Candidate;
 use App\Models\User;
 use Illuminate\Http\Request;
-use YlsIdeas\FeatureFlags\Facades\Features;
 
 class VoterController extends Controller
 {
@@ -20,26 +19,21 @@ class VoterController extends Controller
             return redirect()->route('logout');
         }
 
-        if (Features::accessible('voting')) {
-            $labels = Candidate::query()
-                ->select('id', 'name', 'label', 'number', 'image')
-                ->orderBy('number')
-                ->orderBy('label', 'desc')
-                ->get()
-                ->groupBy('label');
+        $labels = Candidate::query()
+            ->select('id', 'name', 'label', 'number', 'image')
+            ->orderBy('number')
+            ->orderBy('label', 'desc')
+            ->get()
+            ->groupBy('label');
 
-            return view('voter.vote', compact('labels'));
-        }
-
-        return view('voter.cannot-vote');
+        return view('voter.vote', compact('labels'));
     }
 
     public function submit(Request $request)
     {
         abort_if(
             in_array(auth()->user()->role_id, [User::ADMIN, User::SUPER_ADMIN])
-                || sizeof(auth()->user()->votes) === 2
-                || !Features::accessible('voting'),
+                || sizeof(auth()->user()->votes) === 2,
             403
         );
 

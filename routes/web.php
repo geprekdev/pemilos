@@ -30,9 +30,6 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [HomeController::class, 'index'])
             ->name('dashboard');
 
-        Route::get('/toggle-voting', [HomeController::class, 'toggleVoting'])
-            ->name('toggle-voting');
-
         Route::resource('/users', UserController::class)->except('show');
 
         Route::resource('/candidates', CandidateController::class)->except('show');
