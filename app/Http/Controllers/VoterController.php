@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Candidate;
+use App\Models\Setting;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class VoterController extends Controller
 {
@@ -15,6 +17,12 @@ class VoterController extends Controller
 
     public function vote()
     {
+        $canVote = Cache::remember('canVote', 5, fn () => Setting::where('attribute', 'vote')->first());
+
+        if ($canVote->value !== 'on') {
+            return view('voter.cannot-vote');
+        }
+
         if (sizeof(auth()->user()->votes) === 2) {
             return redirect()->route('logout');
         }
@@ -36,6 +44,12 @@ class VoterController extends Controller
                 || sizeof(auth()->user()->votes) === 2,
             403
         );
+
+        $canVote = Cache::remember('canVote', 5, fn () => Setting::where('attribute', 'vote')->first());
+
+        if ($canVote->value !== 'on') {
+            return redirect()->route('vote');
+        }
 
         $vote = $request->validate([
             'osis' => ['required', 'numeric'],
@@ -60,7 +74,7 @@ class VoterController extends Controller
             ]
         ]);
 
-        return view('voter.logout');
+        return redirect()->route('logout');
     }
 
     public function logout()
