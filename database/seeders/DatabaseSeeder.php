@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Candidate;
+use App\Models\Setting;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -17,8 +18,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
+        Setting::create([
+            'attribute' => 'vote',
+            'value' => 'off',
+        ]);
 
-        Candidate::factory(4)->create();
+        if (app()->isLocal()) {
+            User::factory(10)->create();
+            Candidate::factory(4)->create();
+        }
     }
 }

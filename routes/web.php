@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\VoteController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SettingController;
 use App\Http\Controllers\VoterController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,8 @@ Route::middleware('auth')->group(function () {
     Route::prefix('/admin')->name('admin.')->group(function () {
         Route::get('/', [HomeController::class, 'index'])
             ->name('dashboard');
+
+        Route::resource('/settings', SettingController::class)->except('show');
 
         Route::resource('/users', UserController::class)->except('show');
 
