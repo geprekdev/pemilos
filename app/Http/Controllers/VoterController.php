@@ -19,7 +19,7 @@ class VoterController extends Controller
     {
         $canVote = Cache::remember('canVote', 5, fn () => Setting::where('attribute', 'vote')->first());
 
-        if ($canVote->value !== 'on') {
+        if ($canVote?->value !== 'on') {
             return view('voter.cannot-vote');
         }
 
@@ -47,7 +47,7 @@ class VoterController extends Controller
 
         $canVote = Cache::remember('canVote', 5, fn () => Setting::where('attribute', 'vote')->first());
 
-        if ($canVote->value !== 'on') {
+        if ($canVote?->value !== 'on') {
             return redirect()->route('vote');
         }
 
